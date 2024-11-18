@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 사용자가 입력한 값을 서버에 전송하기 -->
+    <!-- 
+        forn : 데이터(서버로) 전달시 사용되어지는 태그
+             : action -> 전송할 서버 주소 - (데이터를 어디로 보낼래)
+             : method -> 보는 방식(GET, POST) - (어떤 방식으로)
+                - GET : 데이터를 URL에 붙여서 쿼리스트링 (짧은데이터)
+                - POST : 데이터를 body영역에 담아서 보내는 방법(보안)
+                submit : form태그 안에 적었던 데이터를 서버로 요청보내겠다(통신 시작)
+
+                쿼리스트링 : 주소에 데이터를 붙여서 요청을 보내겠다
+                (key-value)
+    -->
+    <form action="http://localhost:3002" >
+        <!-- ? : 구분! -->
+        <input name="data">
+        <!--★name : key값을 지정하는 속성 ★-->
+        <input type="submit" value="전송">
+        <!-- ★submit★ : 통신 시작 -->
+        <!-- <button>전송</button>와 같음-->
+    </form>
+</body>
+</html>
+<!-- 5500 : 클라이언트의 live server임! -->
